@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My CV Profile</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dbd8d7;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #5cd1b2;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+
+    .profile h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .profile p {
+      margin: 4px 0;
+      color: #666;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 30px;
+      border-left: 5px solid #007BFF;
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile img {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="profile photo-p46onq" alt="Profile Photo" />
+      <div>
+        <h1>Name: umar faruq labaran</h1>
+        <p>Email: umarfaruqlabaran27@gmail.com</p>
+        <p>Phone: 08103344133</p>
+        <p>Location: kano, nigeria</p>
+      </div>
+    </div>
+
+    <h2>About Me</h2>
+    <p>
+    
+ Personal Bio
+
+Motivated and innovative Hardware Engineer, Web Developer, and Project Manager with over 5 years’ experience in IT, hardware solutions, and project coordination. Passionate about building impactful solutions, teaching technical skills, and contributing to Nigeria’s growing tech ecosystem.
+    </p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>computer hardware repair & maintenance</li>
+      <li>web development(frontend)</li>
+      <li>phone & computer software solution/li>
+      <li>Project Management</li>
+      <li>teaching & technical training</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>technical officer - M.M.S computer republic ventures</strong> (2019 - Present) <br>
+        - Oversaw hardware repair, installation, and maintenance.
+
+Provided IT technical support for clients.
+
+Supervised junior technicians in hardware troubleshooting.
+.
+      </li>
+      <li>
+        <strong>C.T.O ,Chief Hardware Engineer, Project Manager, Web Developer, Instructor- SuhailSenTechnology</strong> (2019 - 2021) <br>
+        - Managed projects, including AI-driven solutions and web development.
+
+Taught computer hardware repair and maintenance.
+
+Taught phone software solutions.
+
+Taught computer software solutions.
+
+Supervised hardware department and coordinated team efforts..
+      </li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>NCE -  Kano State Polytechnic</strong> (2017 - 2022) <br>
+        - Auto Machine Engineering. <br>
+        <strong> T.I.T Institute</strong> 
+       -Certificate in Data Processing <br>
+<strong>M.M.S Computer Republic Ventures Training Center</strong>(2014 -2016 ) <br>
+-Certificate in Computer Repair (Hardware & Software)
+
+      </li>
+    </ul>
+<h2>
+    <ul>
+        <li>
+            <strong>Languages</strong> 
+<br>
+English (Fluent)
+ 
+Hausa (Native 
+</li>
+
+
+    </ul>
+</h2>
+    <button class="download-btn" onclick="downloadCV()">Download CV</button>
+  </div>
+
+  <script>
+    function downloadCV() {
+      const link = document.createElement('a');
+      link.href = 'your-cv.pdf'; // replace with the path to your actual CV file
+      link.download = 'My_CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
